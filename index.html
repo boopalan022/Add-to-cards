@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Frontend Mentor | Product list with cart</title>
+  </head>
+  <body>
+    <main class="container">
+      <section class="container__desserts">
+        <h1 class="desserts__title">Desserts</h1>
+        <ul class="desserts__list"></ul>
+      </section>
+      <section class="container__cart">
+        <h1 class="cart__title">
+          Your Cart
+          <span class="quantity"></span>
+        </h1>
+        <div class="cart__body empty active">
+          <div class="empty__image">
+            <img src="./assets/images/illustration-empty-cart.svg" alt="" />
+          </div>
+          <p class="empty__text">Your added items will appear here</p>
+        </div>
+        <div class="cart__body full">
+          <ul class="cart__list"></ul>
+          <div class="order-info">
+            <span class="order-total">Order Total</span>
+            <span class="order-price"></span>
+          </div>
+          <div class="note">
+            <img src="./assets/images/icon-carbon-neutral.svg" alt="" />
+            <p class="note-text">
+              This is a
+              <span>carbon-neutral</span>
+              delivery
+            </p>
+          </div>
+          <button class="confirm-order">Confirm Order</button>
+        </div>
+      </section>
+      <section class="container__confirm">
+        <img src="./assets/images/icon-order-confirmed.svg" alt="" />
+        <h1 class="confirm__title">Order Confirmed</h1>
+        <p class="confirm__text">We hope you enjoy tour food</p>
+        <ul class="confirm__list"></ul>
+        <div class="order-info">
+          <span class="order-total">Order Total</span>
+          <span class="order-price">0</span>
+        </div>
+        <button class="new-order">Start New Order</button>
+      </section>
+    </main>
+    <script src="./index.js"></script>
+  </body>
+</html>
